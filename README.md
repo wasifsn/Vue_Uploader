@@ -3,9 +3,9 @@
 
 
 ## Project setup
-## Clone the repo and run the below commands 
+### Clone the repo and run the below commands 
 
-## Note: NPM (Node Package Manager) need to be installed on your machine to download the dependecies, hence download [Node.js](https://nodejs.org/en/download/), which automatically downloads NPM and run below command to install globally to latest Version
+## Note: NPM (Node Package Manager) need to be installed on your machine to download the dependecies, hence download [Node.js](https://nodejs.org/en/download/), which automatically downloads NPM and run below command to install globally with the latest Version
 ```
 npm install -g npm 
 ```
