@@ -34,6 +34,6 @@ export default {
         }
       });
     });
-    return promise.all(promises);
+    return Promise.all(promises);
   }
 };

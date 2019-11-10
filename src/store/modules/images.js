@@ -1,11 +1,14 @@
 import api from "../../api/imgur";
-import router from "vue-router";
+import { router } from "../../main";
 const state = {
   allImages: []
 };
 
 const getters = {
-  allImages: state => state.allImages
+  allImages: state => {
+    console.log(state.allImages);
+    return state.allImages;
+  }
 };
 
 const actions = {
@@ -17,14 +20,14 @@ const actions = {
     }
   },
 
-  async uploadImages({ rootState, commit }, images) {
+  async uploadImages({ rootState }, images) {
     console.log(images);
     //get access token
     const { token } = rootState.auth;
     // call our api module
     await api.uploadImages(images, token);
     //redirect user to imagelist component
-    this.$router.redirect("/");
+    router.push("/");
   }
 };
 
