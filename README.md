@@ -1,6 +1,9 @@
 # vueuploader
+### This is an App which lets you Drag and drop images and upload to your Imgur Account using their Oauth functonality to login and Their endpoints to make the data Persistent. It uses vue.js and Semantic UI.
+
 
 ## Project setup
+## Clone the repo and run the below commands 
 ```
 npm install
 ```
@@ -13,11 +16,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
 ```
 
 ### Lints and fixes files
