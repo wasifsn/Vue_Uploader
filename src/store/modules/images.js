@@ -1,5 +1,5 @@
 import api from "../../api/imgur";
-import { router } from "../../main";
+import router from "../../router";
 const state = {
   allImages: []
 };
@@ -27,7 +27,7 @@ const actions = {
     // call our api module
     await api.uploadImages(images, token);
     //redirect user to imagelist component
-    router.push("/");
+    router.push({ path: "/" });
   }
 };
 
